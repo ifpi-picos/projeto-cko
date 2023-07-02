@@ -11,6 +11,7 @@ const listaTransacoes = document.getElementById('lista-transacoes');
 const saldoReceita = document.getElementById('saldo-receita');
 const saldoGasto = document.getElementById('saldo-gasto');
 const mensagem = document.getElementById('mensagem');
+const total = document.getElementById('total');
 
 // Função para formatar o valor em moeda
 function formatarValor(valor) {
@@ -45,13 +46,16 @@ function atualizarSaldo() {
   saldoGasto.textContent = formatarValor(totalGasto);
 
   if (saldo >= 0) {
-    saldoGasto.textContent = formatarValor(0);
-    saldoReceita.textContent = formatarValor(saldo);
+    total.textContent = formatarValor(0);
+    total.textContent = formatarValor(saldo);
+    total.style.color = 'green'
   } else {
-    saldoReceita.textContent = formatarValor(0);
-    saldoGasto.textContent = formatarValor(Math.abs(saldo));
+    total.textContent = formatarValor(0);
+    total.textContent = formatarValor(saldo);
+    total.style.color = 'red'
   }
 }
+
 
 // Função para exibir as transações na lista
 function exibirTransacoes() {
@@ -172,4 +176,5 @@ const transacoesSalvas = JSON.parse(localStorage.getItem('transacoes'));
 if (transacoesSalvas) {
   transacoes = transacoesSalvas;
   exibirTransacoes();
-  atualizarSaldo();}
+  atualizarSaldo();
+}
