@@ -4,12 +4,28 @@ html {
   }
    body {
         font-family:Arial, Helvetica, sans-serif;
-        background-color: rgb(205, 255, 218)
+        background-color: rgb(177, 255, 198)
       }
       
+      img {
+        float:inline-start;
+        position: relative;
+      }
+
       .container {
+        position: relative;
         width: 600px;
-        margin: 0 auto;
+        margin: auto;
+        padding: 5%;
+        border-radius: 5%;
+        background-color: #e6ffe4;
+      }
+
+      .selection {
+        background-color:#4CAF50;
+        color: #ddd;
+        border-color: #4CAF50;
+        margin-bottom: 10px;
       }
       
       h1 {
@@ -27,6 +43,7 @@ html {
       }
       
       input[type="submit"] {
+        margin: auto;
         width: 100%;
         padding: 10px;
         background-color: #4CAF50;
@@ -36,7 +53,7 @@ html {
       }
       
       #transacoes {
-        margin-top: 20px;
+        margin-top: 5%;
       }
       
       #transacoes h2 {
@@ -82,7 +99,7 @@ html {
       
       .saldo {
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 5%;
       }
       
       .saldo .receita {

@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <html lang="pt-BR">
-        <img src="https://th.bing.com/th/id/R.45d050a2709ec388142eeae8a15ccb68?rik=bGuz%2bWJQAN0i3Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_464500.png&ehk=9tf0eF0gx0nDOZSVYP6B6BYtXmu3mtxovGW%2bKlAU0mM%3d&risl=&pid=ImgRaw&r=0.jpg" alt="Descrição da imagem" width="100" height="100">
 
         <title>AGÊNCIA DE FINANÇAS</title>
         <link rel="stylesheet" href="style.css" type="text/css">
@@ -16,22 +15,22 @@
 </head>
 <body>
     <div class="container">
-
+        <img src="https://th.bing.com/th/id/R.45d050a2709ec388142eeae8a15ccb68?rik=bGuz%2bWJQAN0i3Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_464500.png&ehk=9tf0eF0gx0nDOZSVYP6B6BYtXmu3mtxovGW%2bKlAU0mM%3d&risl=&pid=ImgRaw&r=0.jpg" alt="img" width="100" height="100">
         <h1>AGÊNCIA DE FINANÇAS</h1>
         <form id="form">
             <label for="tipo">Tipo:</label>
-            <select id="tipo">
+            <select class="selection" id="tipo">
                 <option value="receita">Receita</option>
                 <option value="gasto">Gasto</option>
             </select>
 
-            <label for="descricao">Descrição:</label>
+            <label class="lab" for="descricao">Descrição:</label>
             <input type="text" id="descricao" required>
 
-            <label for="valor">Valor:</label>
+            <label class="lab" for="valor">Valor:</label>
             <input type="number" id="valor" step="0.01" required>
 
-            <label for="data">Data:</label>
+            <label class="lab" for="data">Data:</label>
             <input type="date" id="data" required>
 
             <input type="submit" value="Adicionar">
@@ -52,6 +51,8 @@
         </div>
 
         <div class="mensagem" id="mensagem"></div>
+
+        <p>Um projeto de Carlos Henrique, Késia Pereira e Olavo José.</p>
     </div>
 
     <script src="script.js"></script>
