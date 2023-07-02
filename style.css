@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+   body {
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgb(205, 255, 218)
+      }
+      
+      .container {
+        width: 600px;
+        margin: 0 auto;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        margin-bottom: 20px;
+      }
+      
+      input[type="text"], input[type="number"], input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: black;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #transacoes {
+        margin-top: 20px;
+      }
+      
+      #transacoes h2 {
+        margin-bottom: 10px;
+      }
+      
+      #transacoes ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .transacao {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+      }
+      
+      .transacao .descricao {
+        flex-grow: 1;
+      }
+      
+      .transacao .valor {
+        flex-grow: 0;
+        margin-left: 10px;
+      }
+      
+      .transacao .data {
+        flex-grow: 0;
+        margin-left: 10px;
+      }
+      
+      .transacao .acoes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      .transacao .acoes button {
+        margin-left: 10px;
+      }
+      
+      .saldo {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      
+      .saldo .receita {
+        color: green;
+      }
+      
+      .saldo .gasto {
+        color: red;
+      }
+      
+      .mensagem {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .mensagem.success {
+        color: green;
+      }
+      
+      .mensagem.error {
+        color: red;
+      }
