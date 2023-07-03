@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="esquerda">
         <img src="https://th.bing.com/th/id/R.45d050a2709ec388142eeae8a15ccb68?rik=bGuz%2bWJQAN0i3Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_464500.png&ehk=9tf0eF0gx0nDOZSVYP6B6BYtXmu3mtxovGW%2bKlAU0mM%3d&risl=&pid=ImgRaw&r=0.jpg" alt="img" width="100" height="100">
         <h1>AGÊNCIA DE FINANÇAS</h1>
         <form id="form">
@@ -23,19 +24,20 @@
                 <option value="receita">Receita</option>
                 <option value="gasto">Gasto</option>
             </select>
+            <br>
+            <label class="lab" for="descricao">Descrição:</label><br>
+            <input placeholder="Produto" type="text" id="descricao" size="20" required><br>
 
-            <label class="lab" for="descricao">Descrição:</label>
-            <input type="text" id="descricao" required>
+            <label class="lab" for="valor">Valor:</label><br>
+            <input placeholder="Reais" type="number" id="valor" step="0.01" required><br>
 
-            <label class="lab" for="valor">Valor:</label>
-            <input type="number" id="valor" step="0.01" required>
+            <label class="lab" for="data">Data:</label><br>
+            <input type="date" id="data" required><br>
 
-            <label class="lab" for="data">Data:</label>
-            <input type="date" id="data" required>
-
-            <input type="submit" value="Adicionar">
+            <input class="adc" type="submit" value="Adicionar">
         </form>
-
+        </div>
+        <div class="direita">
         <div id="transacoes">
             <h2>Transações:</h2>
             <ul id="lista-transacoes"></ul>
@@ -47,10 +49,11 @@
             <label for="gasto">Gastos:</label>
             <span name="gasto" class="gasto" id="saldo-gasto">R$ (-) 0,00</span>
             <label for="total">Saldo:</label>
-            <span name="total" id="total">R$ 0,00</span>
+            <span name="tota" id="total">R$ 0,00</span>
         </div>
 
         <div class="mensagem" id="mensagem"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

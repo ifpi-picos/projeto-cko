@@ -1,125 +1,147 @@
+
 html {
-    height: 100%;
-    width: 100%;
-  }
-   body {
-        font-family:Arial, Helvetica, sans-serif;
-        background-color: rgb(177, 255, 198)
-      }
-      
-      img {
-        float:inline-start;
-        position: relative;
-      }
-
-      .container {
-        position: relative;
-        width: 600px;
-        margin: auto;
-        padding: 5%;
-        border-radius: 5%;
-        background-color: #e6ffe4;
-      }
-
-      .selection {
-        background-color:#4CAF50;
-        color: #ddd;
-        border-color: #4CAF50;
-        margin-bottom: 10px;
-      }
-      
-      h1 {
-        text-align: center;
-      }
-      
-      form {
-        margin-bottom: 20px;
-      }
-      
-      input[type="text"], input[type="number"], input[type="date"] {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-      }
-      
-      input[type="submit"] {
-        margin: auto;
-        width: 100%;
-        padding: 10px;
-        background-color: #4CAF50;
-        color: black;
-        border: none;
-        cursor: pointer;
-      }
-      
-      #transacoes {
-        margin-top: 5%;
-      }
-      
-      #transacoes h2 {
-        margin-bottom: 10px;
-      }
-      
-      #transacoes ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      .transacao {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #ddd;
-        padding: 10px 0;
-      }
-      
-      .transacao .descricao {
-        flex-grow: 1;
-      }
-      
-      .transacao .valor {
-        flex-grow: 0;
-        margin-left: 10px;
-      }
-      
-      .transacao .data {
-        flex-grow: 0;
-        margin-left: 10px;
-      }
-      
-      .transacao .acoes {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      
-      .transacao .acoes button {
-        margin-left: 10px;
-      }
-      
-      .saldo {
-        font-weight: bold;
-        margin-top: 5%;
-      }
-      
-      .saldo .receita {
-        color: green;
-      }
-      
-      .saldo .gasto {
-        color: red;
-      }
-      
-      .mensagem {
-        margin-top: 10px;
-        font-weight: bold;
-        text-align: center;
-      }
-      
-      .mensagem.success {
-        color: green;
-      }
-      
-      .mensagem.error {
-        color: red;
-      }
+  height: 100%;
+  width: 100%;
+}
+#descricao, #valor, #data{
+  background-color: #4CAF50;
+  border: 2.5px solid black;
+  border-radius: 15px;
+  color:black;
+  width: 90%;
+  align-items: center;
+}
+#tipo{
+  background-color: #4CAF50;
+}
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #078080
+    }
+    
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .esquerda{
+      width: 55%;
+      border: 3px solid black;
+      border-radius: 45px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: darkseagreen;
+    }
+    .direita{
+      width: 35%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      border: 3px solid black;
+      border-radius: 25px;
+      background-color: darkseagreen;
+    }
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      margin-bottom: 20px;
+    }
+    
+    input[type="text"], input[type="number"], input[type="date"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: black;
+      border: none;
+      cursor: pointer;
+      border: 2px black solid;
+      border-radius: 15px;
+    }
+    
+    #transacoes {
+      margin-top: 20px;
+    }
+    
+    #transacoes h2 {
+      margin-bottom: 10px;
+    }
+    
+    #transacoes ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .transacao {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid darkcyan;
+      padding: 10px 0;
+    }
+    
+    .transacao .descricao {
+      flex-grow: 1;
+    }
+    
+    .transacao .valor {
+      flex-grow: 0;
+      margin-left: 10px;
+    }
+    
+    .transacao .data {
+      flex-grow: 0;
+      margin-left: 10px;
+    }
+    
+    .transacao .acoes {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+     
+    }
+    
+    .transacao .acoes button {
+      margin-left: 10px;
+      background-color:#4CAF50;
+    }
+    
+    .saldo {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    .saldo .receita {
+      color: #20771c
+    }
+    
+    .saldo .gasto {
+      color: red;
+    }
+    
+    .mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .mensagem.success {
+      color: #1c4e18
+    }
+    
+    .mensagem.error {
+      color: red;
+    }
